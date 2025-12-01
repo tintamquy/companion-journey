@@ -41,7 +41,9 @@
     "streak": "Day Streak",
     "level": "Level",
     "checkIn": "Daily Check-in",
+    "checkInDesc": "Track your emotions and get personalized AI coaching",
     "badges": "Badges",
+    "allBadges": "All Your Badges",
     "community": "Community",
     "quickStats": "Quick Stats",
     "totalCheckins": "Total Check-ins",
@@ -51,7 +53,17 @@
     "myGroup": "My Group",
     "settings": "Settings"
   },
+  "checkin": {
+    "howAreYouFeeling": "How are you feeling today?",
+    "submit": "Submit Check-in",
+    "success": "Check-in Complete!",
+    "xpEarned": "XP Earned",
+    "done": "Done",
+    "alreadyCheckedIn": "You have already checked in today!",
+    "error": "Failed to submit check-in. Please try again."
+  },
   "aiCoach": {
+    "title": "Your AI Coach says:",
     "thinking": "Thinking...",
     "encouraging": "You're doing great!",
     "crisis": "I'm here for you"

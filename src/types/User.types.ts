@@ -11,6 +11,7 @@ export interface User {
   xp: number
   language: string
   badges: string[]
+  lastCheckinDate?: Timestamp
 }
 
 export interface UserProfile extends Omit<User, 'createdAt'> {

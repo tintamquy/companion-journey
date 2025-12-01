@@ -55,6 +55,12 @@ export const createCheckin = async (uid: string, checkinData: Omit<Checkin, 'tim
     ...checkinData,
     timestamp: Timestamp.now(),
   })
+  
+  // Update lastCheckinDate in user profile
+  const userRef = doc(db, 'users', uid)
+  await updateDoc(userRef, {
+    lastCheckinDate: Timestamp.now(),
+  })
 }
 
 export const checkCheckinExists = async (uid: string, date: string): Promise<boolean> => {
