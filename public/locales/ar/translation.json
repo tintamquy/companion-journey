@@ -1,0 +1,91 @@
+{
+  "auth": {
+    "login": "تسجيل الدخول",
+    "signup": "إنشاء حساب",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "displayName": "اسم العرض",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "googleSignIn": "تسجيل الدخول باستخدام Google",
+    "alreadyHaveAccount": "هل لديك حساب بالفعل؟",
+    "dontHaveAccount": "ليس لديك حساب؟",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "signInHere": "سجل الدخول هنا",
+    "signUpHere": "سجل هنا",
+    "errors": {
+      "invalidEmail": "عنوان بريد إلكتروني غير صالح",
+      "weakPassword": "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
+      "passwordMismatch": "كلمات المرور غير متطابقة",
+      "userNotFound": "المستخدم غير موجود",
+      "wrongPassword": "كلمة مرور خاطئة",
+      "emailInUse": "البريد الإلكتروني مستخدم بالفعل",
+      "networkError": "خطأ في الشبكة. يرجى المحاولة مرة أخرى.",
+      "unknownError": "حدث خطأ غير متوقع"
+    }
+  },
+  "emotions": {
+    "happy": "سعيد",
+    "sad": "حزين",
+    "angry": "غاضب",
+    "anxious": "قلق",
+    "lonely": "وحيد",
+    "grateful": "ممتن",
+    "hopeful": "متفائل",
+    "struggling": "يكافح",
+    "intensity": "الشدة",
+    "trigger": "ما الذي أثار هذا الشعور؟",
+    "optional": "اختياري"
+  },
+  "dashboard": {
+    "welcome": "مرحباً",
+    "streak": "سلسلة الأيام",
+    "level": "المستوى",
+    "checkIn": "تسجيل يومي",
+    "badges": "شارات",
+    "community": "المجتمع",
+    "quickStats": "إحصائيات سريعة",
+    "totalCheckins": "إجمالي التسجيلات",
+    "badgesEarned": "الشارات المكتسبة",
+    "daysInRecovery": "أيام في التعافي",
+    "viewAllBadges": "عرض جميع الشارات",
+    "myGroup": "مجموعتي",
+    "settings": "الإعدادات"
+  },
+  "aiCoach": {
+    "thinking": "يفكر...",
+    "encouraging": "أنت تقوم بعمل رائع!",
+    "crisis": "أنا هنا من أجلك"
+  },
+  "badges": {
+    "firstStep": {
+      "name": "الخطوة الأولى",
+      "description": "أكملت تسجيلك الأول"
+    },
+    "weekWarrior": {
+      "name": "محارب الأسبوع",
+      "description": "7 أيام من التسجيلات"
+    },
+    "monthMaster": {
+      "name": "سيد الشهر",
+      "description": "30 يوماً من التسجيلات"
+    }
+  },
+  "gamification": {
+    "xp": "نقاط الخبرة",
+    "levelUp": "ارتقى المستوى!",
+    "achievementUnlocked": "تم فتح الإنجاز!",
+    "streakMultiplier": "مضاعف السلسلة"
+  },
+  "common": {
+    "loading": "جاري التحميل...",
+    "error": "خطأ",
+    "success": "نجح",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "submit": "إرسال",
+    "continue": "متابعة",
+    "back": "رجوع",
+    "next": "التالي"
+  }
+}
+

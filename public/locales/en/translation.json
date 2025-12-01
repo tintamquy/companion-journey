@@ -1,0 +1,91 @@
+{
+  "auth": {
+    "login": "Login",
+    "signup": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "displayName": "Display Name",
+    "confirmPassword": "Confirm Password",
+    "googleSignIn": "Sign in with Google",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?",
+    "forgotPassword": "Forgot password?",
+    "signInHere": "Sign in here",
+    "signUpHere": "Sign up here",
+    "errors": {
+      "invalidEmail": "Invalid email address",
+      "weakPassword": "Password should be at least 6 characters",
+      "passwordMismatch": "Passwords do not match",
+      "userNotFound": "User not found",
+      "wrongPassword": "Wrong password",
+      "emailInUse": "Email already in use",
+      "networkError": "Network error. Please try again.",
+      "unknownError": "An unexpected error occurred"
+    }
+  },
+  "emotions": {
+    "happy": "Happy",
+    "sad": "Sad",
+    "angry": "Angry",
+    "anxious": "Anxious",
+    "lonely": "Lonely",
+    "grateful": "Grateful",
+    "hopeful": "Hopeful",
+    "struggling": "Struggling",
+    "intensity": "Intensity",
+    "trigger": "What triggered this feeling?",
+    "optional": "Optional"
+  },
+  "dashboard": {
+    "welcome": "Welcome",
+    "streak": "Day Streak",
+    "level": "Level",
+    "checkIn": "Daily Check-in",
+    "badges": "Badges",
+    "community": "Community",
+    "quickStats": "Quick Stats",
+    "totalCheckins": "Total Check-ins",
+    "badgesEarned": "Badges Earned",
+    "daysInRecovery": "Days in Recovery",
+    "viewAllBadges": "View All Badges",
+    "myGroup": "My Group",
+    "settings": "Settings"
+  },
+  "aiCoach": {
+    "thinking": "Thinking...",
+    "encouraging": "You're doing great!",
+    "crisis": "I'm here for you"
+  },
+  "badges": {
+    "firstStep": {
+      "name": "First Step",
+      "description": "Completed your first check-in"
+    },
+    "weekWarrior": {
+      "name": "Week Warrior",
+      "description": "7 days of check-ins"
+    },
+    "monthMaster": {
+      "name": "Month Master",
+      "description": "30 days of check-ins"
+    }
+  },
+  "gamification": {
+    "xp": "XP",
+    "levelUp": "Level Up!",
+    "achievementUnlocked": "Achievement Unlocked!",
+    "streakMultiplier": "Streak Multiplier"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "save": "Save",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "continue": "Continue",
+    "back": "Back",
+    "next": "Next"
+  }
+}
+

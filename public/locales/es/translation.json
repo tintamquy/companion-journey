@@ -1,0 +1,91 @@
+{
+  "auth": {
+    "login": "Iniciar sesión",
+    "signup": "Registrarse",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "displayName": "Nombre de usuario",
+    "confirmPassword": "Confirmar contraseña",
+    "googleSignIn": "Iniciar sesión con Google",
+    "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+    "dontHaveAccount": "¿No tienes una cuenta?",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "signInHere": "Inicia sesión aquí",
+    "signUpHere": "Regístrate aquí",
+    "errors": {
+      "invalidEmail": "Dirección de correo electrónico no válida",
+      "weakPassword": "La contraseña debe tener al menos 6 caracteres",
+      "passwordMismatch": "Las contraseñas no coinciden",
+      "userNotFound": "Usuario no encontrado",
+      "wrongPassword": "Contraseña incorrecta",
+      "emailInUse": "El correo electrónico ya está en uso",
+      "networkError": "Error de red. Por favor, inténtalo de nuevo.",
+      "unknownError": "Ocurrió un error inesperado"
+    }
+  },
+  "emotions": {
+    "happy": "Feliz",
+    "sad": "Triste",
+    "angry": "Enojado",
+    "anxious": "Ansioso",
+    "lonely": "Solo",
+    "grateful": "Agradecido",
+    "hopeful": "Esperanzado",
+    "struggling": "Luchando",
+    "intensity": "Intensidad",
+    "trigger": "¿Qué desencadenó este sentimiento?",
+    "optional": "Opcional"
+  },
+  "dashboard": {
+    "welcome": "Bienvenido",
+    "streak": "Racha de días",
+    "level": "Nivel",
+    "checkIn": "Registro diario",
+    "badges": "Insignias",
+    "community": "Comunidad",
+    "quickStats": "Estadísticas rápidas",
+    "totalCheckins": "Total de registros",
+    "badgesEarned": "Insignias obtenidas",
+    "daysInRecovery": "Días en recuperación",
+    "viewAllBadges": "Ver todas las insignias",
+    "myGroup": "Mi grupo",
+    "settings": "Configuración"
+  },
+  "aiCoach": {
+    "thinking": "Pensando...",
+    "encouraging": "¡Lo estás haciendo genial!",
+    "crisis": "Estoy aquí para ti"
+  },
+  "badges": {
+    "firstStep": {
+      "name": "Primer paso",
+      "description": "Completaste tu primer registro"
+    },
+    "weekWarrior": {
+      "name": "Guerrero de la semana",
+      "description": "7 días de registros"
+    },
+    "monthMaster": {
+      "name": "Maestro del mes",
+      "description": "30 días de registros"
+    }
+  },
+  "gamification": {
+    "xp": "XP",
+    "levelUp": "¡Subiste de nivel!",
+    "achievementUnlocked": "¡Logro desbloqueado!",
+    "streakMultiplier": "Multiplicador de racha"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "submit": "Enviar",
+    "continue": "Continuar",
+    "back": "Atrás",
+    "next": "Siguiente"
+  }
+}
+

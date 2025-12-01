@@ -1,0 +1,91 @@
+{
+  "auth": {
+    "login": "Đăng nhập",
+    "signup": "Đăng ký",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "displayName": "Tên hiển thị",
+    "confirmPassword": "Xác nhận mật khẩu",
+    "googleSignIn": "Đăng nhập bằng Google",
+    "alreadyHaveAccount": "Đã có tài khoản?",
+    "dontHaveAccount": "Chưa có tài khoản?",
+    "forgotPassword": "Quên mật khẩu?",
+    "signInHere": "Đăng nhập tại đây",
+    "signUpHere": "Đăng ký tại đây",
+    "errors": {
+      "invalidEmail": "Địa chỉ email không hợp lệ",
+      "weakPassword": "Mật khẩu phải có ít nhất 6 ký tự",
+      "passwordMismatch": "Mật khẩu không khớp",
+      "userNotFound": "Không tìm thấy người dùng",
+      "wrongPassword": "Sai mật khẩu",
+      "emailInUse": "Email đã được sử dụng",
+      "networkError": "Lỗi mạng. Vui lòng thử lại.",
+      "unknownError": "Đã xảy ra lỗi không mong muốn"
+    }
+  },
+  "emotions": {
+    "happy": "Vui vẻ",
+    "sad": "Buồn",
+    "angry": "Tức giận",
+    "anxious": "Lo lắng",
+    "lonely": "Cô đơn",
+    "grateful": "Biết ơn",
+    "hopeful": "Hy vọng",
+    "struggling": "Đang gặp khó khăn",
+    "intensity": "Cường độ",
+    "trigger": "Điều gì gây ra cảm giác này?",
+    "optional": "Tùy chọn"
+  },
+  "dashboard": {
+    "welcome": "Chào mừng",
+    "streak": "Chuỗi ngày",
+    "level": "Cấp độ",
+    "checkIn": "Kiểm tra hàng ngày",
+    "badges": "Huy hiệu",
+    "community": "Cộng đồng",
+    "quickStats": "Thống kê nhanh",
+    "totalCheckins": "Tổng số lần kiểm tra",
+    "badgesEarned": "Huy hiệu đã đạt",
+    "daysInRecovery": "Ngày trong hành trình",
+    "viewAllBadges": "Xem tất cả huy hiệu",
+    "myGroup": "Nhóm của tôi",
+    "settings": "Cài đặt"
+  },
+  "aiCoach": {
+    "thinking": "Đang suy nghĩ...",
+    "encouraging": "Bạn đang làm rất tốt!",
+    "crisis": "Tôi ở đây vì bạn"
+  },
+  "badges": {
+    "firstStep": {
+      "name": "Bước đầu tiên",
+      "description": "Hoàn thành lần kiểm tra đầu tiên"
+    },
+    "weekWarrior": {
+      "name": "Chiến binh tuần",
+      "description": "7 ngày kiểm tra"
+    },
+    "monthMaster": {
+      "name": "Bậc thầy tháng",
+      "description": "30 ngày kiểm tra"
+    }
+  },
+  "gamification": {
+    "xp": "Điểm kinh nghiệm",
+    "levelUp": "Lên cấp!",
+    "achievementUnlocked": "Mở khóa thành tựu!",
+    "streakMultiplier": "Hệ số chuỗi"
+  },
+  "common": {
+    "loading": "Đang tải...",
+    "error": "Lỗi",
+    "success": "Thành công",
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "submit": "Gửi",
+    "continue": "Tiếp tục",
+    "back": "Quay lại",
+    "next": "Tiếp theo"
+  }
+}
+
