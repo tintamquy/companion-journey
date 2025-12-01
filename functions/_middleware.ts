@@ -1,5 +1,7 @@
 // Cloudflare Pages Function to set correct MIME types
-export async function onRequest(context: EventContext<any, any, any>) {
+// This file will be automatically used by Cloudflare Pages
+
+export async function onRequest(context: any) {
   const response = await context.next()
   const url = new URL(context.request.url)
   
@@ -21,4 +23,3 @@ export async function onRequest(context: EventContext<any, any, any>) {
   
   return response
 }
-
