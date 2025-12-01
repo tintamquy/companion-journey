@@ -1,6 +1,8 @@
-name = "companion-journey"
+name = "companion-journey-mime-fix"
+main = "worker.js"
 compatibility_date = "2024-01-01"
 
-[site]
-bucket = "./dist"
-
+[env.production]
+routes = [
+  { pattern = "companion-journey.pages.dev/*", zone_name = "pages.dev" }
+]

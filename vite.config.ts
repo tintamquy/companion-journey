@@ -29,13 +29,14 @@ export default defineConfig({
         if (existsSync(indexPath)) {
           let html = readFileSync(indexPath, 'utf-8')
           
-          // Remove duplicate type="module"
+          // Remove duplicate type="module" - fix pattern
           html = html.replace(/type="module"\s+type="module"/g, 'type="module"')
+          html = html.replace(/type="module"\s+crossorigin/g, 'type="module" crossorigin')
           
-          // Ensure all script tags have type="module" for .js files
+          // Ensure all script tags have correct format
           html = html.replace(
-            /<script([^>]*src="[^"]*\.js[^"]*"[^>]*)(?!.*type="module")>/g,
-            '<script type="module"$1>'
+            /<script\s+type="module"\s+type="module"/g,
+            '<script type="module"'
           )
           
           // Add service worker registration if not present
