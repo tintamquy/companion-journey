@@ -1,25 +1,29 @@
-// Cloudflare Pages Function to set correct MIME types
-// This file will be automatically used by Cloudflare Pages
+// Cloudflare Pages Function - Auto-fix MIME types
+// This runs on every request to fix Content-Type headers
 
-export async function onRequest(context: any) {
-  const response = await context.next()
-  const url = new URL(context.request.url)
+export async function onRequest({ request, next }: any) {
+  const response = await next()
+  const url = new URL(request.url)
+  const pathname = url.pathname
   
-  // Set correct Content-Type headers for JavaScript files
-  if (url.pathname.match(/\.(js|mjs)$/)) {
-    response.headers.set('Content-Type', 'application/javascript; charset=utf-8')
-  } else if (url.pathname.endsWith('.css')) {
-    response.headers.set('Content-Type', 'text/css; charset=utf-8')
-  } else if (url.pathname.endsWith('.json')) {
-    response.headers.set('Content-Type', 'application/json; charset=utf-8')
-  } else if (url.pathname.endsWith('.html')) {
-    response.headers.set('Content-Type', 'text/html; charset=utf-8')
+  // Clone response to modify headers
+  const newResponse = new Response(response.body, response)
+  
+  // Fix MIME types based on file extension
+  if (pathname.match(/\.(js|mjs)$/)) {
+    newResponse.headers.set('Content-Type', 'application/javascript; charset=utf-8')
+  } else if (pathname.endsWith('.css')) {
+    newResponse.headers.set('Content-Type', 'text/css; charset=utf-8')
+  } else if (pathname.endsWith('.json')) {
+    newResponse.headers.set('Content-Type', 'application/json; charset=utf-8')
+  } else if (pathname.endsWith('.html')) {
+    newResponse.headers.set('Content-Type', 'text/html; charset=utf-8')
   }
   
   // Security headers
-  response.headers.set('X-Content-Type-Options', 'nosniff')
-  response.headers.set('X-Frame-Options', 'DENY')
-  response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin')
+  newResponse.headers.set('X-Content-Type-Options', 'nosniff')
+  newResponse.headers.set('X-Frame-Options', 'DENY')
+  newResponse.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin')
   
-  return response
+  return newResponse
 }
