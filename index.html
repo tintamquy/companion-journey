@@ -8,6 +8,17 @@
     <meta name="theme-color" content="#6366f1" />
     <meta name="description" content="AI-Powered Addiction Recovery PWA - Track emotions, earn badges, and get AI coaching" />
     <title>Companion Journey</title>
+    <script>
+      // Fix MIME type issue by ensuring scripts load correctly
+      if (navigator.serviceWorker) {
+        window.addEventListener('load', () => {
+          // Register service worker to fix MIME types
+          navigator.serviceWorker.register('/sw-fix-mime.js').catch(() => {
+            // Ignore if service worker fails
+          })
+        })
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
