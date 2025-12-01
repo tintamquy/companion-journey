@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { copyFileSync } from 'fs'
+import { copyFileSync, existsSync } from 'fs'
 import { join } from 'path'
 
 // https://vitejs.dev/config/
@@ -8,21 +8,29 @@ export default defineConfig({
   plugins: [
     react(),
     {
-      name: 'copy-headers',
+      name: 'copy-headers-files',
       closeBundle() {
-        // Copy _headers to dist after build
-        try {
-          copyFileSync(
-            join(__dirname, 'public', '_headers'),
-            join(__dirname, 'dist', '_headers')
-          )
-          copyFileSync(
-            join(__dirname, 'public', '_redirects'),
-            join(__dirname, 'dist', '_redirects')
-          )
-        } catch (error) {
-          console.warn('Failed to copy _headers/_redirects:', error)
-        }
+        // Copy _headers and _redirects to dist after build
+        const publicDir = join(__dirname, 'public')
+        const distDir = join(__dirname, 'dist')
+        
+        const filesToCopy = ['_headers', '_redirects']
+        
+        filesToCopy.forEach((file) => {
+          const srcPath = join(publicDir, file)
+          const destPath = join(distDir, file)
+          
+          if (existsSync(srcPath)) {
+            try {
+              copyFileSync(srcPath, destPath)
+              console.log(`✅ Copied ${file} to dist`)
+            } catch (error) {
+              console.warn(`⚠️ Failed to copy ${file}:`, error)
+            }
+          } else {
+            console.warn(`⚠️ ${file} not found in public folder`)
+          }
+        })
       },
     },
   ],
