@@ -88,6 +88,27 @@
     "achievementUnlocked": "Achievement Unlocked!",
     "streakMultiplier": "Streak Multiplier"
   },
+  "analytics": {
+    "title": "Analytics & Insights",
+    "totalCheckins": "Total Check-ins",
+    "totalXP": "Total XP Earned",
+    "avgIntensity": "Avg Intensity",
+    "mostCommon": "Most Common Emotion",
+    "emotionDistribution": "Emotion Distribution",
+    "recentCheckins": "Recent Check-ins",
+    "noCheckins": "No check-ins found for this period"
+  },
+  "settings": {
+    "title": "Settings",
+    "profile": "Profile Settings",
+    "account": "Account Information",
+    "stats": "Your Stats",
+    "language": "Language",
+    "save": "Save Changes",
+    "saved": "Saved!",
+    "saveError": "Failed to save settings",
+    "memberSince": "Member Since"
+  },
   "common": {
     "loading": "Loading...",
     "error": "Error",

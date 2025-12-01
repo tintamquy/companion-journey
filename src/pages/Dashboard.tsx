@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useNavigate } from 'react-router-dom'
 import { useAuthStore } from '../store/authStore'
 import { ProtectedRoute } from '../components/auth/ProtectedRoute'
 import { Button } from '../components/common/Button'
@@ -11,6 +12,7 @@ import { calculateXPForLevel } from '../config/constants'
 
 const DashboardContent = () => {
   const { t } = useTranslation()
+  const navigate = useNavigate()
   const { userProfile, logout } = useAuthStore()
   const [showCheckin, setShowCheckin] = useState(false)
   const [showBadges, setShowBadges] = useState(false)
@@ -22,12 +24,18 @@ const DashboardContent = () => {
     <div className="min-h-screen p-4 md:p-8 bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="flex justify-between items-center mb-6">
+          <div className="flex justify-between items-center mb-6">
           <h1 className="text-2xl md:text-3xl font-bold text-white">
             {t('dashboard.welcome')}, {userProfile?.displayName || 'User'}! 👋
           </h1>
           <div className="flex gap-3">
             <LanguageSelector />
+            <Button variant="outline" size="sm" onClick={() => navigate('/analytics')}>
+              📊
+            </Button>
+            <Button variant="outline" size="sm" onClick={() => navigate('/settings')}>
+              ⚙️
+            </Button>
             <Button variant="outline" size="sm" onClick={logout}>
               {t('auth.logout') || 'Logout'}
             </Button>
